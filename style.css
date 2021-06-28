@@ -1,0 +1,171 @@
+.main-nav {
+    background-color: #034569;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-logo {
+    float: left;
+    width: auto;
+}
+
+.navbar-collapse {
+    float: right;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    float: right;
+    background-color: red;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.settings:hover .dropdown-content {
+    display: block;
+}
+
+.settings:hover .dropdown-button {
+    background-color: #3e8e41;
+}
+
+.gallery {
+    text-align: center;
+    display: block;
+    /*position: relative;*/
+    margin-top: 120px;
+    width: 60%;
+    height: 600px;
+}
+
+.gallery-photo {
+    /*text-align: center;*/
+    display: block;
+    /*position: relative;*/
+    float: left;
+    width: calc(70% - 8px);
+    height: calc(100% - 8px);
+    outline: 2px solid #000;
+    border: 2px solid darkorange;
+}
+
+.image-description {
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    background-color: orange;
+}
+
+.image-main {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    background-color: lightskyblue;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+    background-color: orange;
+}
+
+.right-btn {
+    float: right;
+    margin-right: 5%;
+}
+
+.left-btn {
+    float: left;
+    margin-left: 5%;
+}
+
+.gallery-preview {
+    /*position: relative;*/
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+
+.gallery-row {
+    /*width: calc(100% - 11px);*/
+    /*height: calc(25% - 11px);*/
+    width: calc(100%);
+    height: calc(25%);
+}
+
+.gallery-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.image-preview {
+    /*width: calc(100%);*/
+    /*height: calc(100%);*/
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    outline: 2px solid #000;
+    border: 3px solid darkorange;
+}
+
+.preview-btn {
+    width: calc(100%);
+    height: calc(5%);
+    /*outline: 2px solid #000; !* Чёрная рамка *!*/
+    /*border: 3px solid #fff;*/
+}
+
+
+
+
+

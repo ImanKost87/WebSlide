@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="back.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="header-logo">
+                <h1>Web SlideShow</h1>
+            </div>
+            <div class="navbar-collapse">
+                <div class="nav-item settings">
+                    <button class="dropdown-button">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <input type="radio" name="order" id="random">Случайное слайдшоу</input>
+                        </a>
+                        <a href="#">
+                            <input type="radio" name="order" id="seq" checked>Последовательное слайдшоу</input>
+                        </a>
+                        <a href="#">
+                            <input type="checkbox" id="music">Музыка</input>
+                        </a>
+                        <a href="#">
+                            <input type="file" accept="image/*" id="file-uploader" onchange="loadFile(event)">
+                        </a>
+                        <a href="#">
+                            <input type="number" id="show-time" value="1500">Мс</input>
+                            <br>
+                            <br>
+                            <input type="button" onclick="autoNextSlide()" value="Автоматическое вопроизведение">
+                            <input type="button" onclick="stopSlideShow()" value="Остановить">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-photo">
+            <!--   Заглушка!!!!   -->
+            <div class="image-description" id="description">src/img/cat1.jpg</div>
+            <img class="image-main" id="image" src="src/img/cat1.jpg" alt="Заглушка">
+            <div class="buttons">
+                <button class="left-btn" onclick="nextSlide(-1)">Prev</button>
+                <button class="right-btn" onclick="nextSlide(+1)">Next</button>
+            </div>
+        </div>
+
+        <div class="gallery-preview gallery-column">
+<!--            <div class="preview-btn" onclick="plusSlides(-1)">&#65087;</div>-->
+            <div class="gallery-row">
+                <img class="image-preview" id="prev1" src="src/img/cat1.jpg" onclick="showSlide(this.src)">
+            </div>
+            <div class="gallery-row">
+                <img class="image-preview" id="prev2" src="src/img/cat2.jpg" onclick="showSlide(this.src)">
+            </div>
+            <div class="gallery-row">
+                <img class="image-preview" id="prev3" src="src/img/cat3.jpg" onclick="showSlide(this.src)">
+            </div>
+            <div class="gallery-row">
+                <img class="image-preview" id="prev4" src="src/img/cat4.jpg" onclick="showSlide(this.src)">
+            </div>
+<!--            <div class="preview-btn" onclick="plusSlides(1)">&#65088;</div>-->
+        </div>
+    </div>
+</body>
+</html>
